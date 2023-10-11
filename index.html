@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <section class="card">
+      <img src="./images/logo.svg" alt="logo" class="card__logo" />
+      <div class="card__container">
+        <div class="card__inputs">
+          <div class="input__holders">
+            <label for="bill" class="card__label">Bill</label>
+            <input
+              type="number"
+              name="bill"
+              id="bill"
+              class="card__input"
+              placeholder="0"
+            />
+          </div>
+          <label for="tip" class="card__label">Select Tip %</label>
+          <div class="tips">
+            <input
+              type="number"
+              id="tip-custom"
+              class="card__input"
+              placeholder="Custom"
+              role="button"
+            />
+          </div>
+          <div class="input__holders">
+            <label for="people" class="card__label">Number of People</label>
+            <span class="card__message card__errorMessage">Can't be zero</span>
+            <input
+              type="number"
+              name="people"
+              id="people"
+              class="card__input"
+              placeholder="0"
+            />
+          </div>
+        </div>
+        <div class="card__result">
+          <div class="card__output">
+            <div class="card__result-output" id="bill-output">
+              <span class="result-text">Tip Amount</span>
+              <span class="tip-result">$0.00</span>
+            </div>
+            <div class="card__result-output" id="total-output">
+              <span class="result-text">Total</span>
+              <span class="total-result">$0.00</span>
+            </div>
+          </div>
+          <button class="reset-button">Reset</button>
+        </div>
+      </div>
+    </section>
+    <!-- Bill
+
+  Select Tip %
+  5%
+  10%
+  15%
+  25%
+  50%
+  Custom
+
+  Number of People
+
+  Tip Amount
+  / person
+
+  Total
+  / person
+
+  Reset
+   -->
+  </body>
+  <script src="./script.js"></script>
+</html>
